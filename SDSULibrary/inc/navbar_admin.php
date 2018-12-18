@@ -9,14 +9,13 @@
       
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="profile.php">
+          <a class="nav-link" href="">
             Welcome <?php echo $_SESSION['name']; ?>
           </a>
         </li>
 
-      
         <li class="nav-item active">
-          <a class="nav-link" href="index.php">
+          <a class="nav-link" href="admin.php">
             Home
           </a>
         </li>

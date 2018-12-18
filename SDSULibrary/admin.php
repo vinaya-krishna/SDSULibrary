@@ -30,7 +30,7 @@
  ?>
 
 <?php include('inc/header.php'); ?>
-<?php include('inc/navbar.php'); ?>
+<?php include('inc/navbar_admin.php'); ?>
 <div class="container mt-5">
   <h1>Inventory</h1>
   <a class="btn btn-link" href="addBook.php">Add Book</a>

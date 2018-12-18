@@ -23,8 +23,10 @@
 
 			$_SESSION['user'] = $redid;
 
-			echo "Login success";
 			header('Location:'.ROOT_URL.'');
+		}
+		else{
+			echo "Login Filed";
 		}
 	}
 

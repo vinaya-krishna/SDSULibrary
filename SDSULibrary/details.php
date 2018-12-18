@@ -18,7 +18,9 @@
 
     if(isset($_POST['lend'])){
       $checkin = date("Y-m-d");
-      $query_lend = "insert into borrow values ('$isbn','$redid','$checkin',NULL)";
+      $checkout = date('Y-m-d', strtotime($checkin. ' + 5 days'));
+      
+      $query_lend = "insert into borrow values ('$isbn','$redid','$checkout','$checkin')";
 
       $count = $book_data['availability'];
       $count = $count-1;
@@ -113,12 +115,14 @@
 
   			
   		</div>
-  		<h3 class="pt-3">Summary</h3>
-  		<p>
-  			<?php echo $book_data['summary']?>
-  		</p>
 	</div>
 
+  <div>
+      <h3 class="pt-3">Summary</h3><br>
+      <p>
+        <?php echo $book_data['summary']?>
+      </p>
+  </div>
 	
 </div>
 
